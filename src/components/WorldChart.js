@@ -34,6 +34,7 @@ export default function WorldChart({ country }) {
       <div className="WorldChart__main">
          <h2 className="WorldChart__title">
             Worldwide covid-19 history
+            {/* This is for now. I will fix it later than it will show data for each country  */}
             {/* {country === "global"
                ? "Worldwide covid-19 history"
                : `Covid-19 history of ${country}`} */}
