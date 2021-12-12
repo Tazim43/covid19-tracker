@@ -34,7 +34,7 @@ export default function Map({ center, zoom }) {
    };
    useEffect(() => {
       async function getData() {
-         await fetch("/v3/covid-19/countries")
+         await fetch("https://disease.sh/v3/covid-19/countries")
             .then((res) => res.json())
             .then((data) => {
                console.log(data);

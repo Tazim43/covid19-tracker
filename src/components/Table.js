@@ -12,7 +12,7 @@ export default function Table() {
    useEffect(() => {
       async function getData() {
          // fetching the data of all countries
-         await fetch("/v3/covid-19/countries")
+         await fetch("https://disease.sh/v3/covid-19/countries")
             .then((res) => res.json())
             .then((data) => {
                const table = data.map((res) => ({

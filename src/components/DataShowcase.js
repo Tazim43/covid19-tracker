@@ -15,9 +15,9 @@ export default function DataShowcase({ country }) {
    });
    let url;
    if (country === "global") {
-      url = "/v3/covid-19/all";
+      url = "https://disease.sh/v3/covid-19/all";
    } else {
-      url = `/v3/covid-19/countries/${country}`;
+      url = `https://disease.sh/v3/covid-19/countries/${country}`;
    }
    useEffect(() => {
       async function getData() {

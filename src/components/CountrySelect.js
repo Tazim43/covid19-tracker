@@ -12,7 +12,7 @@ export default function CountrySelect({ onCountryChange }) {
    useEffect(() => {
       async function getCountries() {
          // fetching all countries list
-         await fetch("/v3/covid-19/countries")
+         await fetch("https://disease.sh/v3/covid-19/countries")
             .then((res) => res.json())
             .then((data) => {
                const countries = data.map((res) => ({

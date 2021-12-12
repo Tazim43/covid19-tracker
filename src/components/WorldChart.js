@@ -13,7 +13,7 @@ export default function WorldChart({ country }) {
    useEffect(() => {
       async function getData() {
          await fetch(
-            `/v3/covid-19/historical/${
+            `https://disease.sh/v3/covid-19/historical/${
                country === "global" ? "all" : country
             }?lastdays=all`
          )
