@@ -1,0 +1,200 @@
+:root {
+   --primary: #f5f5f5;
+   --secondary: #d5e8d4;
+   --warning: #ffe6cc;
+   --danger: #f8cecc;
+   --success: #a8ffae;
+   --border-color: rgb(207, 207, 207);
+   --border-radius: 4px;
+   --margin-top: 20px;
+   --border-radius-lg: 10px;
+}
+
+.main_body {
+   background-color: var(--primary);
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+.app__flex_top {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.app__flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: var(--margin-top);
+}
+.Header__main {
+   flex: 0.9;
+   max-height: 50px;
+}
+.Header__text {
+   font-size: 26px !important;
+   font-weight: 700 !important;
+   text-align: center;
+   padding: 10px;
+   border: 1px solid var(--border-color);
+   border-radius: var(--border-radius);
+}
+/* .CountrySelect__main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+} */
+
+.CountrySelect__select-box {
+   background-color: var(--secondary) !important;
+   outline: none !important;
+   border-radius: var(--border-radius);
+   padding: 0 40px !important;
+   /* margin-top: var(--margin-top); */
+   font-size: 20px !important;
+   max-height: 50px;
+}
+.DataShowcase__main {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: var(--margin-top);
+}
+.DataShowcase__box {
+   background-color: #fff;
+   padding: 10px 20px;
+   border-radius: var(--border-radius-lg);
+   border: 1px solid var(--border-color);
+   width: 30%;
+   line-height: 25px;
+   font-size: 14px;
+}
+.DataShowcase__box_data {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.DataShowcase__box:nth-child(1) {
+   background-color: var(--warning) !important;
+}
+.DataShowcase__box:nth-child(2) {
+   background-color: var(--danger) !important;
+}
+.DataShowcase__box:nth-child(3) {
+   background-color: var(--success) !important;
+}
+.DataShowcase__box_title {
+   font-size: 14px;
+}
+.Map__main {
+   flex: 0.64;
+   padding: 10px;
+   background-color: #fff;
+   border: var(--border-color);
+   height: 400px;
+   border-radius: var(--border-radius-lg);
+   border: 1px solid var(--border-color);
+}
+.Map__main .leaflet-container {
+   height: 100%;
+   width: 100%;
+}
+.Map__title {
+   font-size: 16px;
+}
+.Map__popup {
+   padding: 5px !important;
+}
+.Map__popup_container {
+   width: 60px;
+   line-height: 0.8 !important;
+}
+.Map__popup_top img {
+   width: 100%;
+}
+.Map__popup_top h2 {
+   width: 100%;
+   text-align: center;
+}
+
+.Table__main {
+   padding: 10px;
+   flex: 0.32;
+   height: 400px;
+   border: var(--border-color);
+   overflow-y: scroll;
+   background-color: #fff;
+   border-radius: var(--border-radius-lg);
+   border: 1px solid var(--border-color);
+}
+.Table__main h2 {
+   margin-bottom: 10px;
+   font-size: 16px;
+}
+.Table__main div div {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 14px;
+}
+.Table__main div div div {
+   padding: 5px;
+}
+.Table__even {
+   background-color: #dae8fc;
+}
+.WorldChart__main {
+   margin-top: var(--margin-top);
+   background-color: #fff;
+   padding: 10px;
+   border-radius: var(--border-radius-lg);
+   border: 1px solid var(--border-color);
+}
+.WorldChart__title {
+   font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+   .Header__text {
+      font-size: 20px !important;
+      margin: 0 10% !important;
+   }
+   .CountrySelect__select-box {
+      padding: 0 20px !important;
+   }
+   .DataShowcase__main {
+      display: block;
+   }
+   .DataShowcase__box {
+      width: 100%;
+   }
+   .DataShowcase__box:nth-child(2) {
+      margin-top: 20px;
+   }
+   .DataShowcase__box:nth-child(3) {
+      margin-top: 20px;
+   }
+   .app__flex {
+      display: block;
+   }
+   .Table__main {
+      margin-top: 20px;
+   }
+}
+@media only screen and (max-width: 470px) {
+   .CountrySelect__select-box {
+      padding: 0px !important;
+      font-size: 16px !important;
+      max-height: 40px;
+   }
+   .Header__text {
+      font-size: 16px !important;
+      max-height: 40px !important;
+   }
+   .Header__main {
+      flex: 1;
+   }
+}
+@media only screen and (max-width: 360px) {
+   .Header__text {
+      max-height: none !important;
+   }
+}
