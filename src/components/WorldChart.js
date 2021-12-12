@@ -33,9 +33,10 @@ export default function WorldChart({ country }) {
    return (
       <div className="WorldChart__main">
          <h2 className="WorldChart__title">
-            {country === "global"
+            Worldwide covid-19 history
+            {/* {country === "global"
                ? "Worldwide covid-19 history"
-               : `Covid-19 history of ${country}`}
+               : `Covid-19 history of ${country}`} */}
          </h2>
          <Line
             className="worldChart__lineGraph"

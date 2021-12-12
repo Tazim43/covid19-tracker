@@ -37,7 +37,6 @@ export default function Map({ center, zoom }) {
          await fetch("https://disease.sh/v3/covid-19/countries")
             .then((res) => res.json())
             .then((data) => {
-               console.log(data);
                const countries = data.map((res) => ({
                   lat: res.countryInfo.lat,
                   long: res.countryInfo.long,
@@ -54,7 +53,7 @@ export default function Map({ center, zoom }) {
       }
       getData();
    }, []);
-   console.log(countries);
+
    return (
       <div className="Map__main">
          <MapContainer center={center} zoom={zoom}>
