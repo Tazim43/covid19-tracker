@@ -32,7 +32,7 @@ export default function App() {
          setCenter([40, 34]);
          setZoom(2);
       } else {
-         url = `/v3/covid-19/countries/${e.target.value}`;
+         url = `https://disease.sh/v3/covid-19/countries/${e.target.value}`;
          await fetch(url)
             .then((res) => res.json())
             .then((data) => {
