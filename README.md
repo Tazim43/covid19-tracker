@@ -1,15 +1,13 @@
-# This is a COVID-19 tracker app built with react.js
+# COVID-19 Tracker Application
 
-[Live site link](https://c19tazim.netlify.app/).
+[Live Site](https://c19tazim.netlify.app/)
 
-# Key features:
- - showing the global data of COVID-19 cases, deaths, and recovery
- - showing data in the map and chart
- - showing specific country-wise data
+## Key Features:
+- Displays global data on COVID-19 cases, deaths, and recoveries.
+- Presents data visually using maps and charts.
+- Provides country-specific data.
 
-# tech stack:
- - React.js as frontend framework
- - Ant Design and Material UI for the design
- - Chart.js and Leaflet Map for showing data in chart and map
-
-
+## Tech Stack:
+- **Frontend Framework**: React.js
+- **Design Libraries**: Ant Design and Material UI
+- **Data Visualization**: Chart.js and Leaflet
